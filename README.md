@@ -23,23 +23,30 @@ We then plot the real against the predicted values of target, along with the lin
 ## ChatGPT's summary
 -- Copying here what GPT came up with after being prompted with "Create a readme file for this:  {the entire python script}". Sadly the formatting gets lost but the gist is there
 
-Readme
-This repository contains a Python script for performing linear regression using the scikit-learn library and visualizing the results using matplotlib.
+# Readme
 
-Installation
+This repository contains a Python script for performing linear regression using the `scikit-learn` library and visualizing the results using `matplotlib`.
+
+## Installation
+
 To run the script, make sure you have the following dependencies installed:
 
-matplotlib
-numpy
-scikit-learn
-You can install these dependencies using pip:
+- `matplotlib`
+- `numpy`
+- `scikit-learn`
 
-Copy code
+You can install these dependencies using `pip`:
+
 pip install matplotlib numpy scikit-learn
-Usage
-Import the necessary modules:
+
 python
 Copy code
+
+## Usage
+
+1. Import the necessary modules:
+
+```python
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.linear_model import LinearRegression
@@ -87,3 +94,8 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 License
 This project is licensed under the MIT License.
+
+csharp
+Copy code
+
+Please note that when pasting this into a GitHub readme file, the code sections
