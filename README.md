@@ -19,6 +19,11 @@ We then plot the real against the predicted values of target, along with the lin
 
 
 
+--------
+
+
+
+
 
 ## ChatGPT's summary
 -- Copying here what GPT came up with after being prompted with "Create a readme file for this:  {the entire python script}". Sadly the formatting gets lost but the gist is there
@@ -40,7 +45,6 @@ You can install these dependencies using `pip`:
 pip install matplotlib numpy scikit-learn
 
 python
-Copy code
 
 ## Usage
 
@@ -54,7 +58,7 @@ from sklearn import datasets
 from sklearn.model_selection import train_test_split
 Load and explore the dataset:
 python
-Copy code
+
 diabetes = datasets.load_diabetes()
 print(type(diabetes))
 print(diabetes.data.shape)
@@ -62,33 +66,35 @@ print(diabetes.target.shape)
 print(diabetes.feature_names)
 Split the dataset into training and testing sets:
 python
-Copy code
+
 X_train, X_test, y_train, y_test = train_test_split(diabetes.data, diabetes.target, test_size=0.2, random_state=1)
 print(X_train)
 Set up the linear regression model:
 python
-Copy code
+
 model = LinearRegression()
 Fit the model to the training data:
 python
-Copy code
+
 model.fit(X_train, y_train)
 Evaluate the model on the testing data:
 python
-Copy code
+
 print(model.score(X_test, y_test))
 Plot the predicted values against the actual values:
 python
-Copy code
+
 y_pred = model.predict(X_test)
 plt.plot(y_test, y_pred, ".")
 Additional visualization:
 python
-Copy code
+
 x = np.linspace(0, 330, 100)
 y = x
 plt.plot(x, y)
 plt.show()
+
+
 Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
@@ -96,6 +102,3 @@ License
 This project is licensed under the MIT License.
 
 csharp
-Copy code
-
-Please note that when pasting this into a GitHub readme file, the code sections
