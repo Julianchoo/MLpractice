@@ -59,43 +59,51 @@ from sklearn.model_selection import train_test_split
 ```
 
 Load and explore the dataset:
-python
-
+```python
 diabetes = datasets.load_diabetes()
 print(type(diabetes))
 print(diabetes.data.shape)
 print(diabetes.target.shape)
 print(diabetes.feature_names)
+```
+
 Split the dataset into training and testing sets:
-python
+```python
 
 X_train, X_test, y_train, y_test = train_test_split(diabetes.data, diabetes.target, test_size=0.2, random_state=1)
 print(X_train)
+```
 Set up the linear regression model:
-python
+```python
 
 model = LinearRegression()
+```
+
 Fit the model to the training data:
-python
+```python
 
 model.fit(X_train, y_train)
+```
 Evaluate the model on the testing data:
-python
+```python
 
 print(model.score(X_test, y_test))
+
 Plot the predicted values against the actual values:
-python
+```python
 
 y_pred = model.predict(X_test)
 plt.plot(y_test, y_pred, ".")
+```
+
 Additional visualization:
-python
+```python
 
 x = np.linspace(0, 330, 100)
 y = x
 plt.plot(x, y)
 plt.show()
-
+```
 
 Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
